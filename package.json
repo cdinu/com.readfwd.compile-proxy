@@ -1,0 +1,27 @@
+{
+  "name": "compiler-proxy",
+  "version": "0.1.0",
+  "description": "Simple web service that compiles single jade files or stylus files to html/css",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "ssh://git@bitbucket.org/cdinu/com.readfwd.compiler-proxy.git"
+  },
+  "author": "Cristian Dinu, Read Forward",
+  "license": "BSD",
+  "devDependencies": {
+    "coffee-script": "~1.6.3"
+  },
+  "dependencies": {
+    "stylus": "~0.34.1",
+    "jade": "~0.33.0",
+    "express": "~3.3.4"
+  },
+  "engines": {
+    "node": "0.10.x",
+    "npm": "1.2.x"
+  }
+}
