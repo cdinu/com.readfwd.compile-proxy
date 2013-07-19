@@ -20,8 +20,8 @@ This is small and webservice to compile single `.jade` files to html and single 
 Replace localhost:5000 with your server
 
 `curl -d 'what=p Hello, world!' http://localhost:5000/jade`
-curl -d "what=body\n  
-  margin 3px" http://localhost:5000/stylus
+`curl -d "what=body\n  
+  margin 3px" http://localhost:5000/stylus`
 
 
 **Deploy to Heroku**
