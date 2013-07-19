@@ -25,6 +25,9 @@ app.get '*', (req, res) ->
   res.end help_text
   
 app.post '/jade', (req, res) ->
+  res.header("Access-Control-Allow-Origin", "*");
+  res.header("Access-Control-Allow-Headers", "X-Requested-With");
+      
   if req.body.what
     res.send compiler.jade req.body.what
   else
@@ -32,6 +35,9 @@ app.post '/jade', (req, res) ->
     res.end '<p>Use post variables and place Jade source in the <i>what</i> param</p>.\n'
     
 app.post '/stylus', (req, res) ->
+  res.header("Access-Control-Allow-Origin", "*");
+  res.header("Access-Control-Allow-Headers", "X-Requested-With");
+
   if req.body.what
     res.send compiler.stylus req.body.what
   else
