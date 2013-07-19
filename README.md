@@ -24,7 +24,7 @@ Replace localhost:5000 with your server
 
 `curl -d 'what=p Hello, world!' http://localhost:5000/jade`
 
-`curl -d "what=body\n  
+`curl -d "what=body\n    
   margin 3px" http://localhost:5000/stylus`
 
 
@@ -37,3 +37,7 @@ In the app directory run:
 `heroku config:set PORT=80`
 
 `heroku ps:scale web=1`
+
+After all files are updated and committed in git:
+
+`git push heroku master`
